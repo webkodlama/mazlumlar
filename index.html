@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Umut | Mazlumlar İçin Yardım ve Destek Platformu</title>
+    <meta name="description" content="Umut Derneği - Mazlumlar, mağdurlar ve yardıma muhtaç insanlar için yardım, destek ve farkındalık platformu. Birlikte daha güçlüyüz.">
+    <meta name="keywords" content="mazlumlar, yardım, destek, umut, dernek, bağış, farkındalık, sosyal sorumluluk">
+    <meta name="author" content="Umut Derneği">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://umut.org">
+    <meta property="og:title" content="Umut | Mazlumlar İçin Yardım ve Destek Platformu">
+    <meta property="og:description" content="Mazlumlar ve yardıma muhtaç insanlar için umut oluyoruz. Birlikte daha güçlüyüz.">
+    <meta property="og:image" content="./assets/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Umut | Mazlumlar İçin Yardım ve Destek Platformu">
+    <meta name="twitter:description" content="Mazlumlar ve yardıma muhtaç insanlar için umut oluyoruz.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <span class="loading-icon">🕊️</span>
+            <span class="loading-text">Umut</span>
+        </div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🕊️</span>
+                <span class="logo-text">Umut</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü Aç/Kapat">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#anasayfa" class="nav-link active">Anasayfa</a></li>
+                <li><a href="#hakkimizda" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#hizmetler" class="nav-link">Hizmetler</a></li>
+                <li><a href="#etki" class="nav-link">Etkimiz</a></li>
+                <li><a href="#iletisim" class="nav-link">İletişim</a></li>
+                <li><a href="#bize-katil" class="nav-link btn-primary">Bize Katıl</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="anasayfa">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-down">
+                    <span class="badge-icon">💚</span>
+                    <span>Mazlumlar İçin Umut Ol</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-line">Her Mazlumun</span>
+                    <span class="title-line highlight">Yanındayız</span>
+                </h1>
+                
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    Umut Derneği olarak, mazlumların sesi oluyor, mağdurlara destek oluyor, 
+                    yardıma muhtaçlara umut oluyoruz. Birlikte daha güçlü, birlikte daha umutluyuz.
+                </p>
+                
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#bize-katil" class="btn btn-primary btn-large">
+                        <span>Bağış Yap</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#hakkimizda" class="btn btn-secondary btn-large">
+                        <span>Daha Fazla Bilgi</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15000">0</span>
+                        <span class="stat-label">Yardım Ulaştırılan İnsan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8500">0</span>
+                        <span class="stat-label">Gönüllü</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="42">0</span>
+                        <span class="stat-label">Şehir</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Aşağı Kaydır</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="hakkimizda">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Hakkımızda</span>
+                <h2 class="section-title">Kimiz Biz?</h2>
+                <p class="section-description">
+                    2015 yılından beri mazlumların ve mağdurların yanında duruyoruz.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🤝</span>
+                        </div>
+                        <div class="floating-card card-1">
+                            <span class="card-icon">💚</span>
+                            <span class="card-text">8+ Yıllık Tecrübe</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <span class="card-icon">🌟</span>
+                            <span class="card-text">Güvenilir</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-title">
+                        Mazlumların <span class="highlight">Sesi</span>, 
+                        Mağdurların <span class="highlight">Desteği</span>
+                    </h3>
+                    <p class="about-text">
+                        Umut Derneği olarak, toplumun dezavantajlı kesimlerine yardım eli uzatıyoruz. 
+                        İster ekonomik zorluklar yaşayan aileler olsun, ister hakları ihlal edilen mazlumlar 
+                        olsun; her zaman yanlarındayız.
+                    </p>
+                    <p class="about-text">
+                        Şeffaf, hesap verebilir ve etkili bir şekilde çalışarak, 
+                        bağışlarınızı en doğru şekilde ihtiyaç sahiplerine ulaştırıyoruz.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Güvenilir</h4>
+                                <p>Tüm bağışlar şeffaf bir şekilde takip edilir</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Hızlı</h4>
+                                <p>Acil durumlarda anında müdahale ederiz</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Topluluk Odaklı</h4>
+                                <p>Binlerce gönüllü ile geniş bir aileyiz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="hizmetler">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Hizmetlerimiz</span>
+                <h2 class="section-title">Neler Yapıyoruz?</h2>
+                <p class="section-description">
+                    Mazlumlar ve ihtiyaç sahipleri için kapsamlı destek programları sunuyoruz.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🍲</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">Gıda Yardımı</h3>
+                    <p class="service-description">
+                        İhtiyaç sahibi ailelere düzenli gıda kolileri ve sıcak yemek dağıtımı yapıyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="gida" data-icon="🍲" data-title="Gıda Yardımı" data-desc="İhtiyaç sahibi ailelere düzenli gıda kolileri ve sıcak yemek dağıtımı yapıyoruz." data-features="Aylık gıda kolisü|Sıcak yemek dağıtımı|Ramazan yardımları|Kurban eti dağıtımı">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Popüler</div>
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">📚</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">Eğitim Desteği</h3>
+                    <p class="service-description">
+                        Öğrencilere burs, kırtasiye ve eğitim materyali desteği sağlıyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="egitim" data-icon="📚" data-title="Eğitim Desteği" data-desc="Öğrencilere burs, kırtasiye ve eğitim materyali desteği sağlıyoruz." data-features="Aylık burs desteği|Kırtasiye yardımı|Okul üniforması|Ders materyalleri">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🏥</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">Sağlık Yardımı</h3>
+                    <p class="service-description">
+                        Tedavi göremeyen hastalara ilaç ve tedavi masrafları desteği veriyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="saglik" data-icon="🏥" data-title="Sağlık Yardımı" data-desc="Tedavi göremeyen hastalara ilaç ve tedavi masrafları desteği veriyoruz." data-features="Ameliyat desteği|İlaç yardımı|Tıbbi cihaz desteği|Fizik tedavi">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">🏠</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">Barınma Desteği</h3>
+                    <p class="service-description">
+                        Ev sahibi olamayan ailelere kira ve ev eşyası yardımı yapıyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="barinma" data-icon="🏠" data-title="Barınma Desteği" data-desc="Ev sahibi olamayan ailelere kira ve ev eşyası yardımı yapıyoruz." data-features="Kira desteği|Ev eşyası yardımı|Isınma yardımı|Elektrik/su desteği">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">⚖️</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">Hukuki Destek</h3>
+                    <p class="service-description">
+                        Hakları ihlal edilen mazumlara ücretsiz hukuki danışmanlık sağlıyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="hukuk" data-icon="⚖️" data-title="Hukuki Destek" data-desc="Hakları ihlal edilen mazumlara ücretsiz hukuki danışmanlık sağlıyoruz." data-features="Ücretsiz danışmanlık|Dava takibi|Hak arama|Avukat yönlendirmesi">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon-wrapper">
+                        <span class="service-icon">💼</span>
+                        <div class="service-glow"></div>
+                    </div>
+                    <h3 class="service-title">İstihdam</h3>
+                    <p class="service-description">
+                        İş arayanlara mesleki eğitim ve iş bulma konusunda destek oluyoruz.
+                    </p>
+                    <a href="#" class="service-link" data-service="istihdam" data-icon="💼" data-title="İstihdam Desteği" data-desc="İş arayanlara mesleki eğitim ve iş bulma konusunda destek oluyoruz." data-features="Mesleki eğitim|İş yerleştirme|CV hazırlama|Mülakat koçluğu">
+                        <span>Detayları Gör</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="etki">
+        <div class="container">
+            <div class="section-header light" data-aos="fade-up">
+                <span class="section-badge">Etkimiz</span>
+                <h2 class="section-title">Birlikte Neler Başardık?</h2>
+                <p class="section-description">
+                    Siz değerli bağışçılarımız ve gönüllülerimizle birlikte büyüyen bir aileyiz.
+                </p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="impact-icon">👨‍👩‍👧‍👦</div>
+                    <div class="impact-number" data-count="15000">0</div>
+                    <div class="impact-label">Yardım Ulaştırılan Aile</div>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="impact-icon">🎓</div>
+                    <div class="impact-number" data-count="3200">0</div>
+                    <div class="impact-label">Burs Verilen Öğrenci</div>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="impact-icon">🏥</div>
+                    <div class="impact-number" data-count="1800">0</div>
+                    <div class="impact-label">Tedavi Desteği</div>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="impact-icon">🤲</div>
+                    <div class="impact-number" data-count="8500">0</div>
+                    <div class="impact-label">Gönüllü</div>
+                </div>
+            </div>
+            
+            <div class="impact-cta" data-aos="fade-up" data-aos-delay="500">
+                <p>Bu başarıların bir parçası olmak ister misiniz?</p>
+                <a href="#bize-katil" class="btn btn-white">Hemen Bağış Yap</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Hikayeler</span>
+                <h2 class="section-title">Umut Hikayeleri</h2>
+                <p class="section-description">
+                    Desteklerinizle hayatı değişen insanların hikayeleri.
+                </p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card active">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        Umut Derneği sayesinde çocuklarımın eğitim hayatı devam ediyor. 
+                        Burs desteğiyle iki çocuğum üniversiteyi kazandı. 
+                        Allah tüm gönüllülerden razı olsun.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>👩</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatma Y.</h4>
+                            <span>Eğitim Bursu Alıcısı</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        Ameliyatım için gerekli olan parayı toplamam mümkün değildi. 
+                        Umut Derneği sayesinde sağlığıma kavuştum. 
+                        İyilik zincirinin bir halkası olmaktan gurur duyuyorum.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>👨</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mehmet K.</h4>
+                            <span>Sağlık Yardımı Alıcısı</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">
+                        3 yıldır gönüllü olarak çalışıyorum. 
+                        İnsanlara yardım etmenin verdiği mutluluk tarif edilemez. 
+                        Umut ailesi benim ikinci ailem oldu.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>👩‍💼</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ayşe D.</h4>
+                            <span>Gönüllü</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev" aria-label="Önceki">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next" aria-label="Sonraki">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="bize-katil">
+        <div class="container">
+            <div class="cta-wrapper" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h2 class="cta-title">Birlikte Daha Güçlüyüz</h2>
+                    <p class="cta-description">
+                        Mazlumlar için umut olmak, mağdurlara destek olmak için 
+                        siz de Umut ailesine katılın. Küçük bir bağış bile büyük değişimler yaratabilir.
+                    </p>
+                    
+                    <div class="donation-options">
+                        <button class="donation-btn" data-amount="50">50 ₺</button>
+                        <button class="donation-btn" data-amount="100">100 ₺</button>
+                        <button class="donation-btn" data-amount="250">250 ₺</button>
+                        <button class="donation-btn" data-amount="500">500 ₺</button>
+                        <button class="donation-btn other">Diğer</button>
+                    </div>
+                    
+                    <form class="donation-form" id="donationForm">
+                        <div class="form-group">
+                            <input type="text" id="donorName" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="donorEmail" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="donorPhone" placeholder="Telefon Numaranız">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <span>Bağış Yap</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                    
+                    <div class="cta-features">
+                        <div class="cta-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <span>Güvenli Ödeme</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                            <span>Şeffaf Raporlama</span>
+                        </div>
+                        <div class="cta-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>Vergi Muafiyeti</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="iletisim">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">İletişim</span>
+                <h2 class="section-title">Bize Ulaşın</h2>
+                <p class="section-description">
+                    Sorularınız veya önerileriniz için bizimle iletişime geçebilirsiniz.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Adres</h4>
+                            <p>Örnek Mahallesi, Umut Caddesi No:42<br>34000 İstanbul, Türkiye</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefon</h4>
+                            <p>+90 (212) 555 00 00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>E-posta</h4>
+                            <p>info@umut.org.tr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Bizi Takip Edin</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Adınız</label>
+                                <input type="text" id="contactName" placeholder="Adınız" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">E-posta</label>
+                                <input type="email" id="contactEmail" placeholder="E-posta adresiniz" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Konu</label>
+                            <select id="contactSubject" required>
+                                <option value="">Konu seçiniz</option>
+                                <option value="bagis">Bağış Hakkında</option>
+                                <option value="gonullu">Gönüllülük</option>
+                                <option value="yardim">Yardım Başvurusu</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Mesajınız</label>
+                            <textarea id="contactMessage" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Mesaj Gönder</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <span class="logo-icon">🕊️</span>
+                            <span class="logo-text">Umut</span>
+                        </a>
+                        <p class="footer-description">
+                            Mazlumlar ve yardıma muhtaç insanlar için umut oluyoruz. 
+                            Birlikte daha güçlü, birlikte daha umutluyuz.
+                        </p>
+                        <div class="footer-newsletter">
+                            <h4>Bültenimize Abone Olun</h4>
+                            <form class="newsletter-form" id="newsletterForm">
+                                <input type="email" placeholder="E-posta adresiniz" required>
+                                <button type="submit">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Hızlı Bağlantılar</h4>
+                        <ul>
+                            <li><a href="#anasayfa">Anasayfa</a></li>
+                            <li><a href="#hakkimizda">Hakkımızda</a></li>
+                            <li><a href="#hizmetler">Hizmetler</a></li>
+                            <li><a href="#bize-katil">Bağış Yap</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Hizmetlerimiz</h4>
+                        <ul>
+                            <li><a href="#">Gıda Yardımı</a></li>
+                            <li><a href="#">Eğitim Desteği</a></li>
+                            <li><a href="#">Sağlık Yardımı</a></li>
+                            <li><a href="#">Hukuki Destek</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Yasal</h4>
+                        <ul>
+                            <li><a href="#">Gizlilik Politikası</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">Çerez Politikası</a></li>
+                            <li><a href="#">KVKK Aydınlatma Metni</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2024 Umut Derneği. Tüm hakları saklıdır.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Gizlilik</a>
+                        <a href="#">Şartlar</a>
+                        <a href="#">Çerezler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı Çık">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 15l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Service Details Modal -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Kapat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon">🍲</div>
+                <h3 class="modal-title" id="modalTitle">Hizmet Başlığı</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" id="modalDescription">Açıklama metni...</p>
+                <div class="modal-features" id="modalFeatures">
+                    <!-- Dinamik özellikler -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#bize-katil" class="btn btn-primary" id="modalCta">Bu Alanda Bağış Yap</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message">İşlem başarılı!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
